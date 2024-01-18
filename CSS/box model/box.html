@@ -1,0 +1,35 @@
+/*inspect element on google to get a better understanding*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width:100px;
+            border:5px solid black;
+            background-color:aqua;
+            padding:5px; /*space between content and border*/
+            margin:10px; /*space between external borders*/
+            box-sizing: border-box; /*includes padding and border in height and width of element*/
+            /* padding:10px;  */
+        }
+        #flag1{
+            background-color: orange;
+        }
+        #flag2{
+            background-color:white;
+        }
+        #flag3{
+            background-color:green
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="flag1">A</div>
+    <div class="box" id="flag2">B</div>
+    <div class="box" id="flag3">C</div>
+</body>
+</html>

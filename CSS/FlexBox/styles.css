@@ -1,0 +1,43 @@
+.container{
+    height:400px;
+    border:1px solid black;
+    display: flex;
+
+    flex-direction:row; /*by default*/
+    /* flex-direction:column;
+    flex-direction:column-reverse;
+    flex-direction:row-reverse; */
+
+    flex-wrap:wrap; /*by default its no wrap*/
+    flex-wrap:wrap-reverse;
+
+    flex-flow: row wrap; /*shorthand notation for above two*/
+
+    justify-content:flex-start;
+    justify-content:flex-end; /*aligns at the end*/
+    justify-content:space-around;
+    justify-content: space-between;
+    justify-content: stretch;
+    justify-content: space-evenly;
+    justify-content:center;
+
+    /*justify content used for aligning items along main axis while align content is used for cross axis*/
+
+    align-items:flex-start;
+    align-items:flex-end;
+    align-items:stretch;
+    align-items:baseline; /*if the size of content is diff, it align the content in same line*/
+    align-items:center;
+
+    align-content: flex-end; /* align content sets distance/alignment between the rows i.e box1, box2 and box3, box4 */
+    align-content:space-between;
+    align-content:space-evenly;
+    align-content:center
+
+    /* gap:40px; */
+}
+
+.box{
+    border:1px solid green;
+    width: 200px; 
+}

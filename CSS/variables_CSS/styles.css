@@ -1,0 +1,26 @@
+:root{
+    --bgcolor: #3f37dd; /*this variable has global scope and can be used with anywhere within css doc unlike the other which has local scope */
+}
+
+.container{
+    background-color: green;
+    border:3px solid black;
+    display:grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    gap:15px;
+    width:700px;    
+    height:500px;
+    justify-content: space-between;
+    margin:10px;
+    padding:10px;
+    background-color: var(--bgcolor);
+}
+
+.box{
+    background-color: aliceblue;
+    border:3px solid red;
+    font-size:2rem;
+    --pink-shade:#9281ac; /* variable declaration is done using 2 hyphens */
+    color:var(--pink-shade); /*variable is used using var() */
+}

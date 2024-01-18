@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    height:500px;
+    width:700px;
+    background-color: brown;
+    border:3px solid black;
+    display:grid;
+    grid-template-columns: 200px 200px 200px; /*makes 3 columns of 200 px each*/
+    grid-template-columns: 1fr 1fr 1fr; /*divides entire width into 3 equal parts*/
+    grid-template-columns: repeat(3, 1fr); /*produces same O/P as above*/
+    grid-template-columns: 100px repeat(2, 1fr);/*1st col 100px rest 1fr */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px; /*makes 2 rows of 100px each*/
+    grid-template-rows: repeat(4, 1fr);
+    gap:15px; /*sets the width of gutter*/
+}
+
+.container2{
+    margin:30px;
+    height:800px;
+    width:800px;
+    border:3px solid black;
+    display:grid;
+    background-color:blueviolet;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: 
+    "a a b c c"
+    "a a d e f"
+    "a a g h i";
+    grid-auto-rows: minmax(100px, auto); /*minimum 100px rows, maximum it is set as auto */
+}
+
+#boxer1{
+    grid-area:1/1/4/4; /* row-start/column-start/row-end/column-end */
+    /* OR */
+    grid-area: a;
+}
+
+#boxer2{
+    grid-area: b;
+}
+#boxer3{
+    grid-area: c;
+}
+#boxer4{
+    grid-area: d;
+}
+#boxer5{
+    grid-area: e;
+}
+#boxer6{
+    grid-area: f;
+}
+#boxer7{
+    grid-area: g;
+}
+#boxer8{
+    grid-area: h;
+}
+#boxer9{
+    grid-area: i;
+}
+
+.boxer{
+    border:3px solid green;
+    background-color: antiquewhite;
+}
+
+.box{
+    background-color: aqua;
+    /* width:80px; */
+    /* height:80px; */
+    border:3px solid black;
+}
+
+#box1{
+    grid-column-start:1;
+    grid-column-end:3;
+}
+
+#box4{
+    grid-row-start:2;
+    grid-row-end:4;
+}

@@ -1,0 +1,16 @@
+h1{
+    text-shadow: 3px 3px #ff0000; /*height and width and colour*/
+    text-shadow: 3px 3px 5px red; /*third para is blue*/
+    text-shadow: 3px 3px 5px red, 6px 6px 5px blue;
+}
+
+div{
+    height:150px;
+    width:200px;
+    /* border:2px solid black; */
+    background-color: red;
+    box-shadow: 6px 6px 6px blue; /*by default takes the colour of text inside it*/
+    /*we can use multiple colors like we used in text-shadow*/
+    box-shadow:-2px -2px 2px, 2px 2px 2px; /*we added border using box-shadow, -ve values put box shadow in top left sides*/
+    /* box-shadow:0.3em 0.3em 1em rgba(200, 0, 0, 0.6); */
+}

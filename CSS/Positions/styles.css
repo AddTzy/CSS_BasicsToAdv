@@ -1,0 +1,38 @@
+.parent{
+    background-color:green;
+    height:1000px;
+    width:100vw;
+}   
+
+div{
+    display: inline-block;
+    background-color: aqua;
+    width:150px;
+    height:150px;
+    border:1px solid black;
+}
+
+.box1{
+    position:fixed; /*box2 came at box1 place because when an element is fixed, it is taken out of the normal flow of doc, so other elements dont know its position*/
+}
+
+.box2{
+    position:static /*it is by default*/
+}
+
+.box3{
+    position:relative; /*relative wrt original positioning*/
+    top:100px;
+    left:50px;
+}
+
+.box4{
+    position:absolute; /*box4 is positioned relative to its ancestor and, if they're no ancestors then is positioned relative to body document*/
+    top:100px;
+    left:50px; 
+}
+
+.box5{
+    position:sticky;
+    top:0px;
+}

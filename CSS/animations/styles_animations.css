@@ -1,0 +1,54 @@
+.container{
+    width:100%;
+    height:215px;
+    background-color: yellow;
+    border:2px solid red;
+}
+
+.box{
+    height:212px;
+    width:212px;
+    border:2px solid green;
+    background-color: aqua;
+
+    animation-name:addy;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in; /*ending fast starting slow */
+    animation-delay: 1s;
+
+    /* animation-direction: reverse;  */
+    /*animation direction changed from right to left, earlier it was left to right */
+
+    /* animation-direction:alternate;  */
+    /*pehle aage fer peeche */
+    
+    animation-fill-mode: forwards; /*stops at end after iteration*/
+    animation-fill-mode: backwards; /*returns back to initial position */
+}
+
+@keyframes addy {
+    0%{ /*0% completion */
+        width:350px;
+        background-color: azure;
+    }
+    50%{
+        width:500px;
+        background-color: blanchedalmond;
+    }
+    100%{ /* 100 completion */
+        width:1000px;
+        background-color: black;
+    }
+}
+
+
+/*keyframes are used to set a starting and an ending point of animation */
+/* @keyframes addy {
+    from{
+        width:212px;
+    }
+    to{
+        width:800px;
+    }
+} */

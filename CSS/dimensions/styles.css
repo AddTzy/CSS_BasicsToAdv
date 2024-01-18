@@ -1,0 +1,18 @@
+.test{
+    height:200px;
+    width:300px;
+    border:1px solid black;
+    max-height:200px;/*defines max height a div element can take*/
+    overflow:scroll;
+    /* overflow:visible;
+    overflow:auto; */
+    /* overflow:hidden; */
+}
+
+.mydiv{
+    min-height:200px; /*size of the block element will be atleast 200px but if size increases, the box will expand as well*/
+    border:1px solid black;
+    margin:10px;
+}
+
+/*overflow is a shorthand property, same as margin(margin-top/bottom/left/right), for x-overflow and y-overflow.

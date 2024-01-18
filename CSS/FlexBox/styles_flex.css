@@ -1,0 +1,31 @@
+.container{
+    border:1px solid black;
+    height:400px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
+
+.box{
+    border:1px solid black;
+    background-color:aqua;
+    flex-grow:1; /*covers the entire width*/
+}
+
+#box2{
+    order:5;
+    flex-grow:2; /*by default value is 0*/
+    align-self:stretch; /*gives alignment to particular items*/
+}
+
+#box3{
+    order:4;
+    flex-shrink:2; /*now box3 will shrink 2 times faster than others*/
+
+}
+
+#box4{
+    order:6;
+    flex-basis:100px;/*size will grow according to text*/
+}

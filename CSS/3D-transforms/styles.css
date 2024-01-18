@@ -1,0 +1,17 @@
+div{
+    border:1px solid black;
+    width:150px;
+    height:150px;
+    margin:20px;
+    background-color: aqua;
+}
+
+.scaling{
+    margin-left:100px;
+    transform: rotateZ(45deg) /*we dont use perspective here*/
+    /* transform:perspective(10px) scaleZ(2) rotateX(2deg) rotateY(1deg); */
+}
+
+.translate{
+    transform: perspective(50px) translateZ(-10px); /*moved away into -z direction*/
+}
